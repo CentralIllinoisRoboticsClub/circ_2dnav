@@ -1,0 +1,24 @@
+TrajectoryPlannerROS:
+  max_vel_x: 4.0
+  min_vel_x: 2.0
+  min_vel_theta: -1.0
+  max_vel_theta: 1.0
+  min_in_place_vel_theta: 0.4
+
+  acc_lim_theta: 0.5
+  acc_lim_x: 1
+  acc_lim_y: 1
+
+  #For this example, we'll use a holonomic robot
+  holonomic_robot: false
+
+  #Set the tolerance on achieving a goal
+  xy_goal_tolerance: 0.4
+  yaw_goal_tolerance: 0.2
+  latch_xy_goal_tolerance: true
+
+  oscillation_timeout: 5.0
+
+  sim_time: 3.0
+  gdist_scale: 1.0
+  pdist_scale: 1.0
